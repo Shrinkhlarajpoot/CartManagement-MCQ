@@ -1,7 +1,7 @@
 import { useCart } from "../../context/cart-context"
 
 export const  Cartcard = ({product})=>{
- const {cartState,cartDispatch} = useCart();
+ const {cartDispatch} = useCart();
  console.log(cartDispatch,"hahahahahaha")
     return(
 

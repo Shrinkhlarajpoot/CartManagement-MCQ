@@ -9,10 +9,10 @@ const reducerFun = (state,{payload,type})=>{
             const newItem = {...ItemtoAdd,quantity:1}
             return {...state,cartProducts:[...state.cartProducts,newItem]}
         case "REMOVE_FROM_CART":
-            let removedProduct= state.cartProducts.find((item)=>item.id===payload.id);
+          
             return {...state,cartProducts:state.cartProducts.filter((item)=>item.id!==payload.id)}
         case "ADD_TO_SAVELATER":
-            let saveLaterProduct= state.cartProducts.find((item)=>item.id===payload.id);
+            
             return {...state,cartProducts:state.cartProducts.filter((item)=>item.id!==payload.id),saveLater:[...state.saveLater,payload]}
         case "REMOVE_FROM_SAVELATER":
             return {...state, saveLater:state.saveLater.filter((item)=>item.id!==payload.id)}

@@ -6,8 +6,8 @@ import { useCart } from "../context/cart-context"
 import { products } from "../data";
 
 export const Cart = ()=>{
- const navigate =    useNavigate();
- const {cartState:{cartProducts,saveLater}}= useCart();
+
+ const {cartState:{cartProducts}}= useCart();
 
     return(
        
