@@ -1,0 +1,21 @@
+.header_wrapper{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 5rem;
+   
+    width: 100vw;;
+}
+.search{
+    width:30rem;
+    padding:0.3rem;
+}
+.links >*{
+    color:var(--primary-color);
+    margin: 0 1rem;
+    font-size: 1.2rem;
+    list-style: none;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+}
