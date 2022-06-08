@@ -1,5 +1,4 @@
 import { Productcard } from "../components/productcard/productcard";
-import { useCart } from "../context/cart-context";
 import { products } from "../data";
 import "./styles.css";
 
